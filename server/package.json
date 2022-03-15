@@ -1,0 +1,35 @@
+{
+  "name": "nasa-project-udemy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "cluster": "pm2 start src/index.js -i max",
+    "test": "jest --detectOpenHandles",
+    "devtest": "jest --watchAll"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "dependencies": {
+    "axios": "^0.26.0",
+    "cors": "^2.8.5",
+    "csv-parse": "^5.0.4",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.3",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15",
+    "pm2": "^5.2.0",
+    "rotating-file-stream": "^3.0.2"
+  },
+  "devDependencies": {
+    "jest": "^27.5.1",
+    "supertest": "^6.2.2"
+  }
+}
